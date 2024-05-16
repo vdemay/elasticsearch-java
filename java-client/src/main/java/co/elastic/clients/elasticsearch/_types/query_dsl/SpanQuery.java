@@ -74,7 +74,7 @@ public class SpanQuery implements OpenTaggedUnion<SpanQuery.Kind, Object>, Jsonp
 	public enum Kind implements JsonEnum {
 		SpanContaining("span_containing"),
 
-		FieldMaskingSpan("field_masking_span"),
+		FieldMaskingSpan("span_field_masking"),
 
 		SpanFirst("span_first"),
 
