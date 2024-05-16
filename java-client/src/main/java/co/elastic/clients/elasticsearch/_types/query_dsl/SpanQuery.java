@@ -502,7 +502,7 @@ public class SpanQuery implements OpenTaggedUnion<SpanQuery.Kind, Object>, Jsonp
 	protected static void setupSpanQueryDeserializer(ObjectDeserializer<Builder> op) {
 
 		op.add(Builder::spanContaining, SpanContainingQuery._DESERIALIZER, "span_containing");
-		op.add(Builder::fieldMaskingSpan, SpanFieldMaskingQuery._DESERIALIZER, "field_masking_span");
+		op.add(Builder::fieldMaskingSpan, SpanFieldMaskingQuery._DESERIALIZER, "span_field_masking");
 		op.add(Builder::spanFirst, SpanFirstQuery._DESERIALIZER, "span_first");
 		op.add(Builder::spanGap, SpanGapQuery._DESERIALIZER, "span_gap");
 		op.add(Builder::spanMulti, SpanMultiTermQuery._DESERIALIZER, "span_multi");
